@@ -1,6 +1,9 @@
 version: '2'
 
 services:
+  webcam_frame_producer:
+    build:
+      context: ./webcam_frame_producer
   zookeeper:
     image: confluentinc/cp-zookeeper:5.4.1
     container_name: zookeeper

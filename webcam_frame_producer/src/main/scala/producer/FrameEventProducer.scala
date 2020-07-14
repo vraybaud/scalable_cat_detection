@@ -37,7 +37,7 @@ class FrameEventProducer(webcamSource: WebcamSource,
             logger.info("cameraId=" + cameraId + " partition=" + metadata.partition())
           }
           if (exception != null) {
-            exception.printStackTrace()
+            logger.error("error cameraId=" + cameraId, exception)
           }
         })
 
